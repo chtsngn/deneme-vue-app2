@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/user/halisaha.cihatsengun.com/
+ - /bin/cp -R repositories/deneme-vue-app2 $DEPLOYPATH
