@@ -50,6 +50,7 @@ export default {
   },
   created() {
     this.halisahalar = this.halisahalariGetir;
+    console.log("GİRİK");
   },
   computed: {
     ...mapGetters([
