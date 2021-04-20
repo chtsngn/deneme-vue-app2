@@ -7,7 +7,7 @@ Vue.use(Vuex);
 const state = {
   secilenHalisaha: null,
   halisahalar: [
-    { id: 'serdivan_id', ad: 'Serdivan Halısaha' },
+    { id: '54_SERDIVAN_HALISAHA_ID', ad: 'Serdivan Halısaha' },
   ],
 };
 

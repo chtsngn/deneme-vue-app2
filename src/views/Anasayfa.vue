@@ -50,7 +50,6 @@ export default {
   },
   created() {
     this.halisahalar = this.halisahalariGetir;
-    console.log("GİRİK");
   },
   computed: {
     ...mapGetters([
@@ -61,9 +60,6 @@ export default {
     ...mapActions([
       "halisahaSecildi",
     ]),
-    git(name, params = null) {
-      this.$router.push({ name, params });
-    },
     halisahaSec() {
       this.halisahaSecildi({ halisaha: this.secilen });
       this.git("halisaha", { halisahaId: this.secilen.id });
