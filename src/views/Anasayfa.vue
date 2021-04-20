@@ -53,12 +53,12 @@ export default {
   },
   computed: {
     ...mapGetters([
-      "halisahalariGetir"
+      "halisahalariGetir",
     ]),
   },
   methods: {
     ...mapActions([
-      "halisahaSecildi"
+      "halisahaSecildi",
     ]),
     git(name, params = null) {
       this.$router.push({ name, params });
