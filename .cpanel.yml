@@ -2,4 +2,4 @@
 deployment:
   tasks:
   - export DEPLOYPATH=/home/cihatsen/halisaha.cihatsengun.com/
-  - /bin/cp -R /home/cihatsen/repositories/deneme-vue-app2 $DEPLOYPATH
+  - /bin/cp -R /home/cihatsen/repositories/deneme-vue-app2/* $DEPLOYPATH
