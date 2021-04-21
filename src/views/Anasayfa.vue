@@ -41,7 +41,6 @@ import { mapActions, mapGetters } from 'vuex'
 
 export default {
   name: 'Anasayfa',
-  components: {},
   data() {
     return {
       halisahalar: [],

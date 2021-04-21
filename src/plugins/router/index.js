@@ -18,6 +18,11 @@ const routes = [
     name: "halisaha",
     component: () => import("../../views/Halisaha.vue"),
   },
+  {
+    path: "/halisaha/rezervasyon/:halisahaId",
+    name: "rezervasyon",
+    component: () => import("../../views/Rezervasyon.vue"),
+  },
 ];
 
 const router = new VueRouter({
@@ -25,5 +30,10 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+
+// router.beforeEach((to, from, next) => {
+//   if (to.name !== 'Login' && !isAuthenticated) next({ name: 'Login' })
+//   else next()
+// })
 
 export default router;

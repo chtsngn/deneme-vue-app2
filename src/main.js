@@ -13,8 +13,6 @@ Vue.config.productionTip = false;
 Vue.mixin({
   methods: {
     git(name, params = {}) {
-      console.log(params);
-      console.log("GİDİYORUM TAMAM");
       this.$router.push({ name, params });
     },
   },

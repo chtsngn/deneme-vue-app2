@@ -29,7 +29,7 @@
                           <v-flex v-else-if="saat.kod === 'DOLU'" class="pa-0">
                             <v-icon dense small class="pr-1">mdi-check-all</v-icon>
                           </v-flex>
-                          <v-btn v-if="saat.kod === 'BOS'" outlined x-small class="pa-0 ma-0">
+                          <v-btn @click="git('rezervasyon', { saat })" v-if="saat.kod === 'BOS'" outlined x-small class="pa-0 ma-0 px-1">
                             REZERVASYON YAP
                           </v-btn>
                         </v-layout>
