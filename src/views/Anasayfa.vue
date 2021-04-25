@@ -6,7 +6,7 @@
           <v-card-title>
             <v-layout column>
               <h3>Halısaha</h3>
-              <p class="body-2">Bilgilerini görüntülemek istediğiniz halısahayı seçiniz</p>
+              <p class="body-2">Bilgilerini görüntülemek istediğiniz halısahayı seçiniz...</p>
             </v-layout>
           </v-card-title>
           <v-card-text>
