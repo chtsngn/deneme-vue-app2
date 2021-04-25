@@ -15,6 +15,9 @@ Vue.mixin({
     git(name, params = {}) {
       this.$router.push({ name, params });
     },
+    geriGit() {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    }
   },
 });
 

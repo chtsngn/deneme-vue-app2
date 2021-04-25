@@ -15,13 +15,19 @@ const routes = [
   },
   {
     path: "/halisaha/:halisahaId",
-    name: "halisaha",
     component: () => import("../../views/Halisaha.vue"),
-  },
-  {
-    path: "/halisaha/rezervasyon/:halisahaId",
-    name: "rezervasyon",
-    component: () => import("../../views/Rezervasyon.vue"),
+    children: [
+      {
+        path: "",
+        name: "halisaha",
+        component: () => import("../../views/Saatler.vue"),
+      },
+      {
+        path: "/halisaha/:halisahaId/rezervasyon",
+        name: "rezervasyon",
+        component: () => import("../../views/Rezervasyon.vue"),
+      },
+    ],
   },
 ];
 
