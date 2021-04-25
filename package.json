@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "watch": "vue-cli-service build --watch"
+    "watch": "vue-cli-service build --watch",
+    "prepare": "husky install"
   },
   "dependencies": {
     "bootstrap-vue": "^2.1.0",
@@ -59,7 +60,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && echo '[HUSKY]: İŞLEM TAMAM!'",
+      "pre-commit": "npm run build && git add -A . && echo '[HUSKY]: İŞLEM TAMAM!'",
       "pre-push": ""
     }
   }
