@@ -21,7 +21,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ env.FTP_SUNUCU }}
-        username: ${{ env.FTP_KULLANICI }}
-        password: ${{ env.FTP_SIFRE }}
+        server: ${{ secrets.FTP_SUNUCU }}
+        username: ${{ secrets.FTP_KULLANICI }}
+        password: ${{ secrets.FTP_SIFRE }}
         local-dir: ./dist/
